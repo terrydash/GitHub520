@@ -26,13 +26,13 @@
 199.232.68.133                camo.githubusercontent.com
 199.232.68.133                github.map.fastly.net
 199.232.69.194                github.global.ssl.fastly.net
-140.82.113.3                  github.com
+140.82.114.4                  github.com
 140.82.112.6                  api.github.com
 199.232.68.133                raw.githubusercontent.com
-20.44.106.140                 user-images.githubusercontent.com
+52.242.123.41                 user-images.githubusercontent.com
 199.232.68.133                favicons.githubusercontent.com
 199.232.68.133                avatars5.githubusercontent.com
-20.44.106.140                 avatars4.githubusercontent.com
+199.232.68.133                avatars4.githubusercontent.com
 199.232.68.133                avatars3.githubusercontent.com
 199.232.68.133                avatars2.githubusercontent.com
 199.232.68.133                avatars1.githubusercontent.com
@@ -42,7 +42,7 @@
 
 ```
 
-上面内容会自动定时更新，保证最新有效。数据更新时间：2020-08-19T20:17:50+08:00（内容无变动不会更新）
+上面内容会自动定时更新，保证最新有效。数据更新时间：2020-08-19T22:14:51+08:00（内容无变动不会更新）
 
 ### 2.1 手动方式
 #### 2.1.1 修改 hosts 文件
