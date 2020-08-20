@@ -22,6 +22,8 @@ RAW_URL = [
     "camo.githubusercontent.com",
     "github.map.fastly.net",
     "github.global.ssl.fastly.net",
+    "gist.github.com",
+    "github.io",
     "github.com",
     "api.github.com",
     "raw.githubusercontent.com",
