@@ -30,7 +30,7 @@
 185.199.108.153               github.io
 140.82.112.3                  github.com
 140.82.114.5                  api.github.com
-52.173.148.44                 raw.githubusercontent.com
+199.232.68.133                raw.githubusercontent.com
 199.232.68.133                user-images.githubusercontent.com
 199.232.68.133                favicons.githubusercontent.com
 199.232.68.133                avatars5.githubusercontent.com
@@ -44,7 +44,7 @@
 
 ```
 
-上面内容会自动定时更新，保证最新有效。数据更新时间：2020-08-25T04:15:22+08:00（内容无变动不会更新）
+上面内容会自动定时更新，保证最新有效。数据更新时间：2020-08-25T06:13:34+08:00（内容无变动不会更新）
 
 ### 2.1 手动方式
 #### 2.1.1 修改 hosts 文件
