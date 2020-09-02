@@ -34,7 +34,14 @@ RAW_URL = [
     "avatars3.githubusercontent.com",
     "avatars2.githubusercontent.com",
     "avatars1.githubusercontent.com",
-    "avatars0.githubusercontent.com"]
+    "avatars0.githubusercontent.com",
+    "codeload.github.com",
+    "github-cloud.s3.amazonaws.com",
+    "github-com.s3.amazonaws.com",
+    "github-production-release-asset-2e65be.s3.amazonaws.com",
+    "github-production-user-asset-6210df.s3.amazonaws.com",
+    "github-production-repository-file-5c1aeb.s3.amazonaws.com"]
+
 IPADDRESS_PREFIX = ".ipaddress.com"
 
 HOSTS_TEMPLATE = """# GitHub520 Host Start
