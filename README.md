@@ -28,7 +28,7 @@
 199.232.69.194                github.global.ssl.fastly.net
 140.82.114.4                  gist.github.com
 185.199.108.153               github.io
-140.82.113.4                  github.com
+140.82.113.3                  github.com
 140.82.112.6                  api.github.com
 199.232.68.133                raw.githubusercontent.com
 199.232.68.133                user-images.githubusercontent.com
@@ -39,7 +39,7 @@
 199.232.68.133                avatars2.githubusercontent.com
 199.232.68.133                avatars1.githubusercontent.com
 199.232.68.133                avatars0.githubusercontent.com
-104.43.248.88                 codeload.github.com
+52.142.46.243                 codeload.github.com
 52.217.46.60                  github-cloud.s3.amazonaws.com
 52.217.33.116                 github-com.s3.amazonaws.com
 52.217.46.164                 github-production-release-asset-2e65be.s3.amazonaws.com
@@ -50,7 +50,7 @@
 
 ```
 
-上面内容会自动定时更新，保证最新有效。数据更新时间：2020-09-03T06:15:19+08:00（内容无变动不会更新）
+上面内容会自动定时更新，保证最新有效。数据更新时间：2020-09-03T08:43:20+08:00（内容无变动不会更新）
 
 ### 2.1 手动方式
 #### 2.1.1 修改 hosts 文件
