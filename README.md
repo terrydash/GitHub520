@@ -39,10 +39,10 @@
 199.232.68.133                avatars2.githubusercontent.com
 199.232.68.133                avatars1.githubusercontent.com
 199.232.68.133                avatars0.githubusercontent.com
-140.82.113.9                  codeload.github.com
-52.216.88.155                 github-cloud.s3.amazonaws.com
+140.82.114.10                 codeload.github.com
+52.216.243.36                 github-cloud.s3.amazonaws.com
 52.217.0.148                  github-com.s3.amazonaws.com
-52.216.142.52                 github-production-release-asset-2e65be.s3.amazonaws.com
+52.216.165.211                github-production-release-asset-2e65be.s3.amazonaws.com
 52.216.77.236                 github-production-user-asset-6210df.s3.amazonaws.com
 52.216.236.43                 github-production-repository-file-5c1aeb.s3.amazonaws.com
 # Star me GitHub url: https://github.com/521xueweihan/GitHub520
@@ -50,7 +50,7 @@
 
 ```
 
-上面内容会自动定时更新，保证最新有效。数据更新时间：2020-10-04T00:20:30+08:00（内容无变动不会更新）
+上面内容会自动定时更新，保证最新有效。数据更新时间：2020-10-04T02:18:16+08:00（内容无变动不会更新）
 
 ### 2.1 手动方式
 #### 2.1.1 修改 hosts 文件
