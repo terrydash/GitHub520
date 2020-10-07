@@ -1,33 +1,51 @@
-# This is a basic workflow to help you get started with Actions
+# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: CI
+name: GitHub520
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  schedule:
+    - cron: '0 */2 * * *'
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
+
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.7]
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: update readme
+      env:
+        gitee_token: ${{ secrets.GITEE_TOKEN }}
+        gitee_gist_id: ${{ secrets.GITEE_GIST_ID }}
+        gitee_gist_file_name: ${{ secrets.GITEE_GIST_FILE_NAME }}
+      run: |
+        # fetch new ip content and update readme file
+        python fetch_ips.py
+    - name: commit
+      id: commit
+      run: |
+        git config --global user.email 53047801@qq.com
+        git config --global user.name terrydash
+        git add .
+        git commit -m "update readme content"
+      continue-on-error: true
+    - name: Check on failures
+      if: steps.commit.outputs.status == 'failure'
+      run: exit 1
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
